@@ -1,4 +1,4 @@
-package com.example.smartcity.SmartCity.Controller;
+package com.example.smartcity.SmartCity.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
