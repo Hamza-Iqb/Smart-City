@@ -25,4 +25,8 @@ public class RegistrationService {
         return registrationRepository.findById(id)
                 .orElseThrow( () -> new UserNotFoundException(String.format("Username: %s does not exist", username)));
     }
+
+    public Registration addRegistration(Registration registration) {
+        return registrationRepository.save(registration);
+    }
 }
