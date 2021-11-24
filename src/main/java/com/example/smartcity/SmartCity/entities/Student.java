@@ -14,7 +14,6 @@ public class Student {
     @Id
     private Long id;
     private String email;
-    private String mobileNumber;
     private String username;
     private String password;
 
@@ -22,7 +21,6 @@ public class Student {
     public Student(Registration registration) {
         this.id = registration.getId();
         this.email = registration.getEmail();
-        this.mobileNumber = registration.getMobileNumber();
         this.username = registration.getUsername();
         this.password = registration.getPassword();
     }
