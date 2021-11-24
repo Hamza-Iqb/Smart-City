@@ -7,7 +7,7 @@ public enum UserType {
 
     private final String type;
 
-    private UserType(String type) {
+    UserType(String type) {
         this.type = type;
     }
 

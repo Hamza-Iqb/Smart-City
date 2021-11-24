@@ -35,4 +35,11 @@ public class RestController {
         Registration result = registrationService.addRegistration(registration);
         return new ResponseEntity<>(result, HttpStatus.CREATED);
     }
+
+    @DeleteMapping("deleteRegistration/{username}")
+    public ResponseEntity<String> deleteRegistration(@PathVariable ("username") String username){
+        registrationService.deleteRegistration(username);
+        return new ResponseEntity<String>(String.format("Successfully deleted employee with Username: '%s'", username), HttpStatus.OK);
+    }
+
 }
